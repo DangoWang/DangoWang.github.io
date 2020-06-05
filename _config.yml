@@ -5,7 +5,7 @@ header-img: img/home-bg.jpg
 email: dd.parkhere@gmail.com
 description: "不知道怎么变强，就随便记录一下。"
 keyword: ""
-url: "ddpark.xyz"              # your host, for absolute URL
+url: "www.baidu.com"              # your host, for absolute URL
 baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 timezone: CN
 
@@ -69,8 +69,8 @@ kramdown:
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "写写代码，做做设计，看看产品。世界那么大，多玩玩看看。"
-sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "喜欢解决问题，研究新玩意儿。"
+sidebar-avatar: /img/dd-me.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
