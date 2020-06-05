@@ -2,9 +2,9 @@
 layout:     post
 title:      "Hello 2020"
 subtitle:   " \"Hello World, Hello Blog\""
-date:       2015-01-29 12:00:00
+date:       2020-06-5 12:00:00
 author:     "DD"
-header-img: "img/post-bg-2015.jpg"
+header-img: "img/post-bg-hello-blog.jpg"
 catalog: true
 tags:
     - 生活
