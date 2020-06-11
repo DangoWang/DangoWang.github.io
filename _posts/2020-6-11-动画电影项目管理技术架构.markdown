@@ -1,0 +1,18 @@
+---
+layout:     post
+title:      "动画电影的项目管理技术架构"
+subtitle:   " \"介绍一下如何从技术角度来全面管理动画电影项目\""
+date:       2020-06-11 12:00:00
+author:     "DD"
+header-img: "img/post-bg-animation-proj-management.jpg"
+catalog: true
+tags:
+    - 电影
+    - 动画
+    - 流程
+---
+> “这篇文章是之前为了汇报而做的ppt，后来导成了图片，综合了自己做项目的过程中所涉及到的技术知识以及管理知识，总结的几点经验，希望对动画电影的项目管理技术层面有参考价值。”
+
+# 动画电影技术管理架构简要介绍
+本文只从技术层面触发，为项目管理提供技术解决思路，并不是完全的项目管理文章
+![img/avatar-me.jpg](img/post-content-animation-management.png)
