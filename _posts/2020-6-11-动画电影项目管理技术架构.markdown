@@ -15,4 +15,4 @@ tags:
 
 # 动画电影技术管理架构简要介绍
 本文只从技术层面触发，为项目管理提供技术解决思路，并不是完全的项目管理文章
-![img/avatar-me.jpg](../img/post-content-animation-management.png)
+![img/avatar-me.jpg](http://ddpark.xyz/img/post-content-animation-management.png)
