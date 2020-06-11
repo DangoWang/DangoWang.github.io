@@ -59,10 +59,12 @@ kramdown:
 
 
 # Disqus settings
-disqus_username: donghaowang
+#disqus_username: donghaowang
 
 # Netease settings
 netease_comment: true
+
+livere_uid: MTAyMC81MDQ0OS8yNjkzNg==
 
 
 
