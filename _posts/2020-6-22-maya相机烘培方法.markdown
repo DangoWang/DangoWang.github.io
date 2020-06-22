@@ -1,0 +1,21 @@
+---
+layout:     post
+title:      "maya相机烘焙方法"
+subtitle:   " \"将maya中的相机烘焙成一个干净的新相机\""
+date:       2020-06-11 12:00:00
+author:     "DD"
+header-img: "img/post-bg-alitrip.jpg"
+catalog: true
+tags:
+    - maya
+    - 技术
+---
+> “这篇将一下怎么把maya中脏脏的相机bake得干干净净”
+
+# 为什么要做这个工具
+昨天我们后期跟我说，能不能把maya的相机处理地干净点儿？因为想要导出fbx到别的软件，动画师总是把相机做了各种约束，还各种parent。
+# 怎么做
+仔细想了一下，其实很简单，只需要建立一个新相机，把该传地属性传过去，然后做个约束（不保持偏移），然后bake就好了。
+其实transform属性很好解决，主要是如果shape上某些属性key有帧（例如focalLength），约束是没办法解决的。这里用listConnections来获取shape
+的所有上游链接，然后直接连到新相机即可（动画节点也是上游链接中的一部分）。
+原理很简单，代码更简单。贴在这里[MayaBakeCamera](https://github.com/DangoWang/MayaBakeCamera/blob/master/__init__.py "MayaBakeCamera")
