@@ -2,7 +2,7 @@
 layout:     post
 title:      "maya相机烘焙方法"
 subtitle:   " \"将maya中的相机烘焙成一个干净的新相机\""
-date:       2020-06-11 12:00:00
+date:       2020-06-22 18:17:00
 author:     "DD"
 header-img: "img/post-bg-alitrip.jpg"
 catalog: true
