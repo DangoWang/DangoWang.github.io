@@ -1,0 +1,46 @@
+---
+layout:     post
+title:      "把shotgun数据库缓存下来以提高查询速度"
+subtitle:   " \"缓存shotgun数据到本地postgresql\""
+date:       2020-08-13 16:39:00
+author:     "DD"
+header-img: "img/post-bg-alitrip.jpg"
+catalog: true
+tags:
+    - shotgun
+    - postgresql
+---
+> “云端的shotgun查询速度太慢了，还时不时报ssl错误（虽然官方给了解决方案但是有时候还是会有网络问题）。因此把shotgun数据库缓存到本地，对于云端用户还是非常有必要的。”
+
+# 需要完成的工作
+*  你需要搭建一个postgresql服务。直接docker部署即可，网上教程很多不赘述了；
+*  使用sg.schema_read()获取所有entity及fields，然后根据需要创建table和column；
+*  使用find来查询所需要的的数据，并将其写入到pg当中；
+*  将pg的查询语句封装成shotgun_api3中的find和find_one的调用方式，这样你就不必更改你之前的工具了。
+*  最后写一个event，来实时缓存shotgun的数据。这样就能保住获取到的数据始终是最新的。<br>
+# 代码
+以上步骤我都实现了，代码参考：
+[shotgun_cache_scripts](https://github.com/DangoWang/shotgun_cache_scripts "shotgun_cache_scripts")
+# 说明
+## event
+trigger the cache method to cache the data in real time.<br>
+用来触发缓存函数以实现实时缓存
+
+## generate_tables
+create tables and columns for postgre from shotgun<br>
+建表和同步所有字段
+
+## initial_data
+cache all the data from shotgun<br>
+将所有shotgun数据缓存下来
+
+## api
+find and find_one wrapped method in form of shotgun_api3 but with query target of your postgresql server.<br>按照shotgun_api3的查询api方式封装了两个方法：find 和 find_one.这样你不必更改之前的代码了.
+
+# 依赖
+python2.7<br>
+shotgun_api3<br>
+psycopg2
+
+# 效果
+实测查询速度从100ms~1000ms下降到了两位数，有时候瞬间就能查到结果。
