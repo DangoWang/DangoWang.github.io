@@ -17,7 +17,7 @@ tags:
 *  使用sg.schema_read()获取所有entity及fields，然后根据需要创建table和column；
 *  使用find来查询所需要的的数据，并将其写入到pg当中；
 *  将pg的查询语句封装成shotgun_api3中的find和find_one的调用方式，这样你就不必更改你之前的工具了。
-*  最后写一个event，来实时缓存shotgun的数据。这样就能保住获取到的数据始终是最新的。<br>
+*  最后写一个event，来实时缓存shotgun的数据。这样就能保证获取到的数据始终是最新的。<br>
 # 代码
 以上步骤我都实现了，代码参考：
 [shotgun_cache_scripts](https://github.com/DangoWang/shotgun_cache_scripts "shotgun_cache_scripts")
