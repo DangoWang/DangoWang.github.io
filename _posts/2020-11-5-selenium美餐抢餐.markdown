@@ -2,7 +2,7 @@
 layout:     post
 title:      "selenium+chrome抢餐"
 subtitle:   " \"手快有，手慢无\""
-date:       2020-08-13 16:39:00
+date:       2020-11-5 16:40:00
 author:     "DD"
 header-img: "img/post-bg-alitrip.jpg"
 catalog: true
@@ -22,7 +22,6 @@ selenium 是一个 web 的自动化测试工具，具体介绍[在这里](https:
 ### 代码
 ```python
 # coding: utf-8
-
 import datetime
 import time
 import json
